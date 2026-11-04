@@ -1,7 +1,7 @@
 import requests
 import json
 
-API_KEY = "AIzaSyALXR9LaiavQvzZ4BoVzgKJEbzBwZyl4FI"
+API_KEY = ""
 CHANNEL_HANDLE = "MrBeast"
 
 def get_playlist_id(CHANNEL_HANDLE):
