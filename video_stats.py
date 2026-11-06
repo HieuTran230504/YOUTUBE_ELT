@@ -4,12 +4,12 @@ import json
 import os
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path=".env")
+load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 CHANNEL_HANDLE = "MrBeast"
 
-def get_playlist_id(CHANNEL_HANDLE):
+def get_playlist_id():
 
     try:
         url = f"https://youtube.googleapis.com/youtube/v3/channels?part=contentDetails&forHandle={CHANNEL_HANDLE}&key={API_KEY}"
@@ -34,4 +34,4 @@ def get_playlist_id(CHANNEL_HANDLE):
         raise e
 
 if __name__ == "__main__":
-    get_playlist_id(CHANNEL_HANDLE)
+    get_playlist_id()
