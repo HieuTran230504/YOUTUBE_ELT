@@ -35,3 +35,9 @@ Thiết kế gồm:
 - CI/CD với GitHub Actions
 
 ---
+
+## 3. Engineering Decisions
+
+### 🔹 Vì sao dùng ELT thay vì ETL?
+
+- Vì hiện tại, chi phí lưu trữ đã trở nên rất rẻ, do đó có thể thực hiện việc Load trước mà không sợ làm lãng phí không gian lưu trữ
